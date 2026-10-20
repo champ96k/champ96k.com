@@ -9,6 +9,44 @@
 # `date` is the date the project was created (its repo's creation date), so the
 # timeline reflects when the work started.
 
+- id: drawmesh
+  title: DrawMesh
+  description: >-
+    A local-first whiteboard that feels like Excalidraw but lives entirely in
+    your browser, with offline drawing and instant autosave.
+  date: 2026-10-19
+  type: Website
+  tags: [TypeScript, Web, Tool]
+  url: https://drawmesh.netlify.app/
+  github: https://github.com/champ96k/drawmesh
+  status: Open Source
+  technologies: [TypeScript, React, Excalidraw]
+  overview: >-
+    I built DrawMesh for fun, mostly to understand how excalidraw.com works by
+    reverse engineering it piece by piece. It is a local-first whiteboard: your
+    drawings are saved in IndexedDB, the app installs as a PWA, and it keeps
+    working with no network. A command palette and debounced autosave make it
+    feel like a real tool rather than a demo, and building it taught me how much
+    coordination a simple canvas actually needs.
+
+- id: posetrace
+  title: PoseTrace
+  description: >-
+    A camera overlay that shows a reference pose on screen, so you can line up
+    a shot instead of guessing.
+  date: 2026-10-18
+  type: Website
+  tags: [Web, Tool, Photography]
+  url: https://posetrace.netlify.app
+  status: Live
+  overview: >-
+    I take a lot of photos and the hardest part is often getting the pose right
+    when there is nobody around to demonstrate it. PoseTrace overlays a ghost
+    reference figure on your camera feed, with guides for Street, Summer, and
+    Film & Minimal styles, so you can match the composition live. You can save
+    the references you like and come back to them, which makes it a small
+    personal lookbook as much as a shooting aid.
+
 - id: project-1947
   title: Project 1947
   description: >-
@@ -23,14 +61,17 @@
   status: Active
   image: /project/15Aug1947.png
   overview: >-
-    A digital library of Indian newspapers from 15 August 1947, the day India
-    gained its independence. It lets history lovers read what people actually
-    saw and read on that day, straight from the original pages.
+    I built this because reading about Independence Day in a textbook never
+    felt like the real thing — I wanted to see the actual pages people opened
+    that morning. It collects front pages and clippings from 15 August 1947 in
+    one browsable archive, so history lovers can read the news exactly as it was
+    printed. The goal was simple: make a day that shaped the country feel
+    immediate instead of like a distant chapter.
 
 - id: let-me-think
   title: Let Me Think
-  description: A tiny tool that pauses you before you send, so you don't send a
-    message you'll later regret.
+  description: Lofi beats for building things quietly — a minimal radio for deep
+    work.
   date: 2026-08-10
   type: Website
   tags: [Web, Tool]
@@ -38,9 +79,10 @@
   status: Live
   image: /project/letmethink.png
   overview: >-
-    A tiny tool that pauses you before you send a message. It asks you to take
-    a breath and reconsider, so a quick reaction doesn't turn into a regretful
-    reply.
+    Most music apps want you to browse, queue, and curate; I just wanted one
+    stream that starts playing and stays out of the way. Let Me Think is a small
+    lofi radio built for coding sessions, with no playlists or algorithms to
+    manage. Open it, leave it running, and get back to the work.
 
 - id: tokenbar
   title: Tokenbar
@@ -55,9 +97,10 @@
   technologies: [Swift, macOS]
   image: /project/TokenBar.png
   overview: >-
-    A small app that lives in the menu bar of your Mac. It shows how much of
-    your AI service allowance you have used, how much it has cost you, and
-    what's left, without you ever needing to open the provider's dashboard.
+    AI subscriptions and API usage are easy to forget until the bill arrives.
+    TokenBar puts your token spend in the macOS menu bar, so the number is
+    always one glance away instead of buried in a dashboard. I built it to stop
+    guessing what a long week of prompting actually cost.
 
 - id: openalgo
   title: OpenAlgo
@@ -72,10 +115,11 @@
   status: Live
   image: /project/OpenAlgo.png
   overview: >-
-    A practice ground for people learning algorithms and problem solving, the
-    kind of skills used in software job interviews. You solve problems and get
-    instant feedback on whether your solution works, like a coach sitting next
-    to you.
+    Algo trading tools tend to assume you already live in a terminal and think
+    in code. OpenAlgo was my attempt to make the workflow approachable — wiring
+    strategies, data, and broker actions together without the usual setup maze.
+    It is for people who want to automate ideas and learn by doing, not just
+    read about backtests.
 
 - id: peakfit
   title: PeakFit
@@ -95,9 +139,10 @@
     - label: Play Store
       url: https://play.google.com/store/apps/details?id=com.champ96k.peakfit
   overview: >-
-    A fitness companion for people who want a structured workout and meal plan
-    without hiring a personal trainer. It guides you through exercises and
-    eating habits at your own level and pace.
+    Most fitness apps bury the one thing you need — logging a workout — under
+    streaks, social feeds, and paywalls. PeakFit keeps tracking simple: record
+    what you did, see your progress, and move on. I built it for people who want
+    consistency without turning fitness into another app to manage.
 
 - id: contest-hub
   title: Contest Hub
@@ -115,9 +160,11 @@
     - label: Play Store
       url: https://play.google.com/store/apps/details?id=com.champ96k.labs.contesthub
   overview: >-
-    A single place that gathers coding competitions from many platforms and
-    shows you their dates and times in one feed, so you never miss a chance to
-    take part.
+    Students miss competitions all the time, not because they aren't interested
+    but because the listings are scattered across college groups, posters, and
+    random links. Contest Hub gathers coding contests, hackathons, and similar
+    events into one place you can browse. The aim was to make finding the next
+    thing to enter take minutes, not an afternoon of searching.
 
 - id: champ96k-labs
   title: Champ96k Labs
@@ -132,9 +179,11 @@
   status: Live
   image: /project/champ96kLabs.png
   overview: >-
-    A home for small experiments and toys. It's the corner of the internet
-    where quick ideas get built, hosted and kept alive, so each one has a place
-    to live and be shared.
+    Not every idea deserves a full product, but the good ones still deserve
+    somewhere to live. champ96k Labs is my collection of experiments and side
+    builds — small tools, prototypes, and things I made to learn something. It
+    is a place to ship rough ideas in public instead of letting them sit in a
+    folder.
 
 - id: triple-ledger-x
   title: Trip Ledger
@@ -149,9 +198,11 @@
   status: Live
   image: "/project/Trip Ledger.png"
   overview: >-
-    A simple log for tracking office trip expenses. When you travel for work,
-    it keeps a record of what you spent so you can get your money back without
-    any confusion.
+    Settling office trip expenses used to mean paper bills, a spreadsheet, and
+    a lot of back-and-forth before anyone got reimbursed. Trip Ledger tracks who
+    paid for what across a trip and works out the splits, so the maths is done
+    once and everyone can see it. I built it to replace the spreadsheet ritual
+    with something the whole team can actually use.
 
 - id: focusmatrix
   title: FocusMatrix
@@ -166,9 +217,11 @@
   status: Live
   image: "/project/Focus Matrix.png"
   overview: >-
-    A planning tool that helps you build your day around what really matters.
-    Instead of a never-ending to-do list, it divides your time into focused
-    blocks so you actually finish what you started.
+    To-do lists grow; priorities don't. Focus Matrix sorts tasks into the
+    Eisenhower grid — urgent, important, and everything in between — so it is
+    obvious what to do next and what can wait. I built it for the moment when a
+    long list stops being useful and you just need to decide what actually
+    matters today.
 
 - id: quantadb
   title: QuantaDB
@@ -184,9 +237,11 @@
   technologies: [Dart, Dart FFI]
   image: /project/QuantaDB.png
   overview: >-
-    A fast way for apps to store and find their own data on the device, without
-    needing an internet connection or a central server. Think of it as a
-    personal filing cabinet that lives entirely inside your phone.
+    Flutter apps often need a fast local database, but the options either add a
+    lot of overhead or push you toward a remote service. QuantaDB is a small
+    embedded database written in Dart and reached through Dart FFI, so queries
+    stay local and quick. It started as a way to understand how database engines
+    work under the hood and became a library I could reuse in my own apps.
 
 - id: ai-code-review
   title: AI Code Review Action
@@ -201,9 +256,10 @@
   technologies: [Python, GitHub Actions]
   image: "/project/AI Code Review.png"
   overview: >-
-    A helper that checks software code automatically whenever a developer
-    submits changes, like a second reviewer who never sleeps. It flags likely
-    mistakes and suggests improvements before the changes go live.
+    Code review time is scarce, and a lot of it goes to things a machine can
+    catch first. AI Code Review Action runs in CI and leaves a first-pass review
+    on pull requests — surface-level issues, obvious risks, and questions worth
+    a human look. It is meant to give reviewers a head start, not replace them.
 
 - id: ui-color-picker
   title: UI Color Picker
@@ -218,6 +274,7 @@
   status: Open Source
   image: "/project/UI Color Picker.png"
   overview: >-
-    A tiny tool for choosing colors while designing an app or webpage. It gives
-    you a palette and a color input in one simple, fast place, with nothing
-    extra weighing it down.
+    Picking a colour palette should take seconds, not a tour through five
+    different tools. UI Color Picker is a small utility for grabbing colours and
+    building palettes quickly, built while I was learning my way around UI work.
+    It is simple on purpose: open it, pick what you need, get back to designing.
